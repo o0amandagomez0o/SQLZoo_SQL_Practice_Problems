@@ -39,10 +39,23 @@ SELECT subject, MIN(yr)
 FROM nobel
 GROUP BY subject
 
+/*
+6.
+For each subject show the number of prizes awarded in the year 2000.
+nobel(yr, subject, winner)
+*/
+SELECT subject, COUNT(subject) AS 'Number of Prizes'
+FROM nobel
+WHERE yr = 2000
+GROUP BY subject
 
-
-
-
+/*
+7.
+Show the number of different winners for each subject.
+*/
+SELECT subject, COUNT(subject)
+FROM nobel
+GROUP BY subject
 
 
 
