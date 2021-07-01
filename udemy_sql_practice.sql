@@ -160,4 +160,4 @@ where first_name IS NULL;
 #Select the names of all departments whose department number value is not null.
 select dept_name
 from departments
-where dept_no IS NOT NULL;
+where dept_no IS NOT NULL
